@@ -1,8 +1,5 @@
 set shell := ["powershell.exe", "-c"]
 
-hello:
-  Write-Host "Hello"
-
 work day part:
   cargo watch -x "check -p {{day}}" -s "just test {{part}} -p {{day}}"
 
